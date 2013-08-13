@@ -200,7 +200,6 @@ class VirtualCurrencyViewOrdering extends JView {
         
         $this->total =  JHtml::_("virtualcurrency.total", $this->amount, $this->item->amount);
     
-    
     }
     
     /**
@@ -233,11 +232,11 @@ class VirtualCurrencyViewOrdering extends JView {
         }
         
         // Add styles
-        $this->document->addStyleSheet( 'media/'.$this->option.'/css/site/bootstrap.min.css');
-        $this->document->addStyleSheet( 'media/'.$this->option.'/css/site/style.css');
+        $this->document->addStyleSheet('media/'.$this->option.'/css/site/bootstrap.min.css');
+        $this->document->addStyleSheet('media/'.$this->option.'/css/site/style.css');
         
         // Add scripts
-        $this->document->addScript(JURI::root() . 'media/'.$this->option.'/js/site/ordering.js');
+        $this->document->addScript('media/'.$this->option.'/js/site/ordering.js');
         
     }
     
